@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    /*reset dos padrões do navegador*/
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #F6F6F6;
+    padding: 1%;
+}
+header{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #babfd1 ;
+    color: #4d4d4e ;
+    justify-content: space-between; /*para alinhar os itens no cabeçalho*/
+}
+.titulo{
+    height: 15vh;
+    display: flex; /*para possibilitar alterações  na div*/
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 3%;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+main{
+    background-color: black; /*cor de fundo da div para conseguir adcionar as linhas*/
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+.cabeçalho_menu{
+    justify-content: space-around;
+    padding: 1%;
+    display: flex;
+    background-color: #4d4d4e ;
+    flex-direction: row;
+    align-self: flex-end;   /*para alinhar a barra no final da tela do titulo*/   
+}
+.cabeçalho_menu_link{
+    color: #ffffff;
+    text-decoration: none; /*retirar linha do link clicavel*/
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+img{ 
+    align-self: center;
+    width: 10vh;
+}
+.imagem-cabeçalho{
+    background-color:#103b74;
+    padding: 2vh 0 0 0;
+    align-self: flex-start;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.softwares{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    background-color: #F6F6F6;/*cor de fundo da div para conseguir adcionar as linhas*/
+    align-self: stretch;
+    padding: 3%; /*para centralizar o texto na div*/
+}
+.resumo{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    background-color: #F6F6F6;
+    align-self: stretch;
+    padding: 3%; /*para centralizar o texto na div*/
+}
+.habilidades{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    background-color: #F6F6F6;
+    align-self: stretch;
+    flex: 1 1 0; /*junção de flex-grow, flex-shrink e flex-basis para esticar de acordo com o tamanho da tela*/
+    align-self: stretch; /*para esticar a div até o final da tela*/
+    padding: 3%; /*para centralizar o texto na div*/
+}
+
+.experiencia{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    background-color: #F6F6F6;
+    align-self: stretch;
+    padding: 3%; /*para centralizar o texto na div*/
+    
+}
+.formação{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    background-color: #F6F6F6;
+    align-self: stretch;
+    flex: 1 1 0; /*junção de flex-grow, flex-shrink e flex-basis para esticar de acordo com o tamanho da tela*/
+    align-self: stretch; /*para esticar a div até o final da tela*/
+    padding: 3%; /*para centralizar o texto na div*/
+}
+.bloco1{
+    width: 50%;/*para ajustar a metade da tela*/
+    display: flex;
+    flex-direction: column; /*para colocar os itens um abaixo do outro*/
+    align-items: flex-start; /*para alinhar os itens no inicio*/
+    gap: 2px;   /*para a linha de divisão de cada bloco*/
+    flex: 1 1 0; /*junção de flex-grow, flex-shrink e flex-basis para esticar de acordo com o tamanho da tela*/
+    align-self: stretch; /*para esticar a div até o final da tela*/
+    
+}
+.bloco2{
+    width: 50%;/*para ajustar a metade da tela*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    flex: 1 1 0; /*junção de flex-grow, flex-shrink e flex-basis para esticar de acordo com o tamanho da tela*/
+    align-self: stretch; /*para esticar a div até o final da tela*/
+    
+}
+ul{
+    
+    padding: 17px;/*para alinhar a lista com o titulo de cada (ul/li)*/
+}
+p{
+    padding: 17px 0 0 0; /*para alinhar o parágrafo com o titulo do texto*/
+}
+@media (max-width: 1024px) {
+    main {
+        flex-direction: column; /* Alinha os blocos em uma coluna */
+    }
+
+    .bloco1, .bloco2 {
+        width: 100%; /* Faz os blocos ocuparem toda a largura */
+    }
+
+    .cabeçalho_menu {
+        align-items: center; /* Centraliza os links */
+        flex-wrap: wrap; /* Permite que os links se movam para a próxima linha se necessário */
+    }
+
+    .cabeçalho_menu_link {
+        margin: 5px 0; /* Adiciona espaçamento entre os links */
+    }
+    header{
+        height: 25vh;
+        display: flex;
+        flex-direction: column;
+        background-color: #babfd1 ;
+        color: #4d4d4e ;
+        /* height: 100vh; */
+    }
+}
+
+
